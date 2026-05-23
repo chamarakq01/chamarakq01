@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mega Sic Bo Adaptive AI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topBar">
+<h1>Mega Sic Bo Adaptive AI</h1>
+<div id="clock"></div>
+</div>
+
+<div class="inputBox">
+<input type="number" id="roundInput" min="1" max="18" placeholder="Enter Round">
+<button onclick="addRound()">ADD</button>
+</div>
+
+<div class="predictionBox">
+<h2>AI Predictions</h2>
+<div id="predictions"></div>
+</div>
+
+<div class="patternBox">
+<h2>Detected Patterns</h2>
+<div id="patterns"></div>
+</div>
+
+<div class="historyBox">
+<h2>History</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Value</th>
+<th>Delta</th>
+<th>Time</th>
+</tr>
+</thead>
+<tbody id="historyTable"></tbody>
+</table>
+</div>
+
+<script src="storage.js"></script>
+<script src="ai.js"></script>
+<script src="predictor.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
